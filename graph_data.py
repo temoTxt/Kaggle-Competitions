@@ -20,7 +20,7 @@ def read_training_data(file):
     elif 'eval' in file:
         read_training_eval_data(file)
     else:
-        print('You are reading training data')
+        print('You are reading other data')
         training_df = pd.read_csv(file)
         print(training_df.head())
 
