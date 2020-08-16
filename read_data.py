@@ -4,6 +4,10 @@ def read_data(file):
     print('You are reading data')
     if 'train' in file:
         read_training_data(file)
+    elif 'sell_price' in file:
+        print('You are reading sales prices')
+        price_data = pd.read_csv(file)
+        print(price_data.head)
     else:
         comp_data = pd.read_csv(file)
         print(comp_data.head())
