@@ -1,5 +1,5 @@
 import pandas as pd
-from explore_data import pass_data
+from explore_sell_price_data import pass_data
 
 def read_data(file):
     print('You are reading data')
