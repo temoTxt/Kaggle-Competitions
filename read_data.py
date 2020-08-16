@@ -1,4 +1,5 @@
 import pandas as pd
+from explore_data import pass_data
 
 def read_data(file):
     print('You are reading data')
@@ -8,6 +9,7 @@ def read_data(file):
         print('You are reading sales prices')
         price_data = pd.read_csv(file)
         print(price_data.head)
+        pass_data(price_data)
     else:
         comp_data = pd.read_csv(file)
         #print(comp_data.head())
